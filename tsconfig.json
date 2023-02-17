@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "experimentalDecorators": true,
+    "incremental": true,
+    "sourceMap": true
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "node_modules",
+  ]
+}

@@ -1,0 +1,9 @@
+# Project exclude paths
+/ts/classes/Game.js
+/ts/classes/Game.js.map
+/ts/classes/Keyboard.js
+/ts/classes/Keyboard.js.map
+/ts/classes/Transformations.js
+/ts/classes/Transformations.js.map
+/ts/index.js
+/ts/index.js.map
