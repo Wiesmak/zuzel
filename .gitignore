@@ -7,3 +7,5 @@
 /ts/classes/Transformations.js.map
 /ts/index.js
 /ts/index.js.map
+/ts/**.js
+/ts/**.js.map

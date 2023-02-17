@@ -3,6 +3,7 @@ import Canvas from "./canvas.js"
 import {KeyboardEvent} from "./Keyboard.js"
 import Movable from "../interfaces/movable";
 import {Turn} from "./Transformations.js";
+import {addLap, laps} from "./Game.js";
 
 export enum Pegasi {
     dash = 'dash',
@@ -180,9 +181,11 @@ export default class Pegasus extends CanvasElement implements Movable {
                 case 0:
                     this.laps++
                     this.colisionTimeout()
+                    addLap()
                     break
                 case 1:
                     this.stop()
+                    addLap()
                     alert(`Wygrał gracz ${this.id}`)
             }
         }

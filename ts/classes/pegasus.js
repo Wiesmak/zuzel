@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import CanvasElement from "./canvas-element.js";
 import { KeyboardEvent } from "./Keyboard.js";
 import { Turn } from "./Transformations.js";
+import { addLap } from "./Game.js";
 export var Pegasi;
 (function (Pegasi) {
     Pegasi["dash"] = "dash";
@@ -164,9 +165,11 @@ export default class Pegasus extends CanvasElement {
                 case 0:
                     this.laps++;
                     this.colisionTimeout();
+                    addLap();
                     break;
                 case 1:
                     this.stop();
+                    addLap();
                     alert(`Wygrał gracz ${this.id}`);
             }
         }
